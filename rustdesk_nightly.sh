@@ -31,5 +31,5 @@ echo "RUSTDESK_URL_AMD64=\"$RUSTDESK_URL_AMD64\""
 echo "RUSTDESK_URL_ARM64=\"$RUSTDESK_URL_ARM64\""
 echo ""
 echo "------------------DOWNLOADING-----------------"
-wget -P wwwroot/latest $RUSTDESK_URL_AMD64
-wget -P wwwroot/latest $RUSTDESK_URL_ARM64
+wget -P wwwroot/nightly $RUSTDESK_URL_AMD64
+wget -P wwwroot/nightly $RUSTDESK_URL_ARM64
