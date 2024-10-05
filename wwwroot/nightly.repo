@@ -1,0 +1,7 @@
+[xlion-repo]
+name=XLion Repo latest
+baseurl=https://xlionjuan.github.io/rpm-repo-test/nightly
+enabled=1
+gpgcheck=1
+gpgkey=https://xlionjuan.github.io/rpm-repo-test/pubkey.gpg
+

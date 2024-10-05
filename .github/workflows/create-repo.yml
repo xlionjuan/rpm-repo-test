@@ -1,4 +1,4 @@
-name: Create Repo for RustDesk latest
+name: Create Repo for RustDesk latest and nightly
 
 on:
   #schedule:
@@ -34,13 +34,21 @@ jobs:
           env:
             GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
-        - name: Download RustDesk
+        - name: Download RustDesk latest
           run: |
             bash rustdesk_latest.sh
+
+        - name: Download RustDesk nightly
+          run: |
+            bash rustdesk_nightly.sh
 
         - name: Create repo latest
           run: |
             bash createrepo-latest.sh
+
+        - name: Create repo nightly
+          run: |
+            bash createrepo-nightly.sh
 
         - name: Upload Pages artifact
           uses: actions/upload-pages-artifact@v3
