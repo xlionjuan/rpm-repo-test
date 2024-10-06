@@ -3,9 +3,10 @@
   "extends": [
     "config:recommended"
   ],
-    "packageRules": [
+  "packageRules": [
     {
       "matchPackageNames": ["github-actions"],
       "automerge": true
     }
+  ]
 }
