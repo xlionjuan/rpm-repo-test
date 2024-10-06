@@ -1,10 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "enabledManagers": ["github-actions"],
   "packageRules": [
     {
-      "matchPackageNames": ["github-actions"],
-      "automerge": true,
-      "ignoreTests": true
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true
     }
   ]
 }
