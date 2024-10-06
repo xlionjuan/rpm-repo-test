@@ -3,7 +3,8 @@
   "packageRules": [
     {
       "matchPackageNames": ["github-actions"],
-      "automerge": true
+      "automerge": true,
+      "ignoreTests": true
     }
   ]
 }
