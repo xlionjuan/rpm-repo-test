@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -oue pipefail
+
 # Sign RPM
 rpm --addsign wwwroot/nightly/*.rpm
 
