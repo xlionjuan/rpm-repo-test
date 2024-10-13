@@ -24,7 +24,7 @@ jobs:
 
         - name: Install requirements
           run: |
-            sudo apt update && sudo apt install rpm createrepo-c -y
+            pip install createrepo-c --break-system-packages
     
         - name: Import GPG Key
           run: |
